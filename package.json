@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "name": "character-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ressource/scss/style.scss:ressource/css/style.css"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-7-character-manager-bahpareil"
+}
