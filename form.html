@@ -16,6 +16,10 @@
     
     <main>
         <section>
+            <input type="file" accept="image/*" />
+        </section>
+        
+        <section>
             <input type="text" name="firstname" id="firstname" placeholder="Enter the character's name here"/>
         </section>
     
@@ -25,7 +29,7 @@
 
         <form>
             <input id="x" type="hidden" name="content">
-            <trix-editor input="x"></trix-editor>
+            <trix-editor input="x" placeholder="Enter your character's story here"></trix-editor>
         </form>
         <!-- <section>
             <button><i class="fa-solid fa-b"></i></button>
@@ -39,6 +43,10 @@
             <button><i class="fa-solid fa-align-right"></i></button>
         </br><input type="text" name="long-description" id="long-description" placeholder="Enter the character's story"/>
         </section> -->
+        <section>
+            <button>Save changes</button>
+            <button>Delete character</button>
+        </section>
     </main>
 
     <footer>
