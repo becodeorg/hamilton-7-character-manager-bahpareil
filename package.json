@@ -10,7 +10,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "sass": "sass --watch ressource/scss/style.scss:ressource/css/style.css"
+    "sass": "sass --watch ressource/scss/style.scss:ressource/css/styles.css"
   },
   "homepage": "https://github.com/becodeorg/hamilton-7-character-manager-bahpareil"
 }
