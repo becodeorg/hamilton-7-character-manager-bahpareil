@@ -1,4 +1,4 @@
-const { default: axios } = require("axios");
+import { default as axios } from "axios";
 const wrapper = document.getElementById("card-wrapper");
 
 getChara();
