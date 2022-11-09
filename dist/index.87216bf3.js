@@ -143,13 +143,13 @@
     }
   }
 })({"9MAGT":[function(require,module,exports) {
-"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "1a78327f87216bf3";
+"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -1452,8 +1452,8 @@ var _axiosErrorJs = require("../core/AxiosError.js");
 var _axiosErrorJsDefault = parcelHelpers.interopDefault(_axiosErrorJs);
 var _formDataJs = require("../env/classes/FormData.js");
 var _formDataJsDefault = parcelHelpers.interopDefault(_formDataJs);
-"use strict";
 var Buffer = require("buffer").Buffer;
+"use strict";
 /**
  * Determines if the given thing is a array or js object.
  *
@@ -1616,105 +1616,7 @@ const predicates = (0, _utilsJsDefault.default).toFlatObject((0, _utilsJsDefault
 }
 exports.default = toFormData;
 
-},{"../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","../env/classes/FormData.js":"lSnyf","buffer":"fCgem","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3u8Tl":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _utilsJs = require("../utils.js");
-var _utilsJsDefault = parcelHelpers.interopDefault(_utilsJs);
-"use strict";
-/**
- * Create an Error with the specified message, config, error code, request and response.
- *
- * @param {string} message The error message.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [config] The config.
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- *
- * @returns {Error} The created error.
- */ function AxiosError(message, code, config, request, response) {
-    Error.call(this);
-    if (Error.captureStackTrace) Error.captureStackTrace(this, this.constructor);
-    else this.stack = new Error().stack;
-    this.message = message;
-    this.name = "AxiosError";
-    code && (this.code = code);
-    config && (this.config = config);
-    request && (this.request = request);
-    response && (this.response = response);
-}
-(0, _utilsJsDefault.default).inherits(AxiosError, Error, {
-    toJSON: function toJSON() {
-        return {
-            // Standard
-            message: this.message,
-            name: this.name,
-            // Microsoft
-            description: this.description,
-            number: this.number,
-            // Mozilla
-            fileName: this.fileName,
-            lineNumber: this.lineNumber,
-            columnNumber: this.columnNumber,
-            stack: this.stack,
-            // Axios
-            config: this.config,
-            code: this.code,
-            status: this.response && this.response.status ? this.response.status : null
-        };
-    }
-});
-const prototype = AxiosError.prototype;
-const descriptors = {};
-[
-    "ERR_BAD_OPTION_VALUE",
-    "ERR_BAD_OPTION",
-    "ECONNABORTED",
-    "ETIMEDOUT",
-    "ERR_NETWORK",
-    "ERR_FR_TOO_MANY_REDIRECTS",
-    "ERR_DEPRECATED",
-    "ERR_BAD_RESPONSE",
-    "ERR_BAD_REQUEST",
-    "ERR_CANCELED",
-    "ERR_NOT_SUPPORT",
-    "ERR_INVALID_URL"
-].forEach((code)=>{
-    descriptors[code] = {
-        value: code
-    };
-});
-Object.defineProperties(AxiosError, descriptors);
-Object.defineProperty(prototype, "isAxiosError", {
-    value: true
-});
-// eslint-disable-next-line func-names
-AxiosError.from = (error, code, config, request, response, customProps)=>{
-    const axiosError = Object.create(prototype);
-    (0, _utilsJsDefault.default).toFlatObject(error, axiosError, function filter(obj) {
-        return obj !== Error.prototype;
-    }, (prop)=>{
-        return prop !== "isAxiosError";
-    });
-    AxiosError.call(axiosError, error.message, code, config, request, response);
-    axiosError.cause = error;
-    axiosError.name = error.name;
-    customProps && Object.assign(axiosError, customProps);
-    return axiosError;
-};
-exports.default = AxiosError;
-
-},{"../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lSnyf":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _formData = require("form-data");
-var _formDataDefault = parcelHelpers.interopDefault(_formData);
-exports.default = (0, _formDataDefault.default);
-
-},{"form-data":"2TZrR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2TZrR":[function(require,module,exports) {
-/* eslint-env browser */ module.exports = typeof self == "object" ? self.FormData : window.FormData;
-
-},{}],"fCgem":[function(require,module,exports) {
+},{"buffer":"fCgem","../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","../env/classes/FormData.js":"lSnyf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fCgem":[function(require,module,exports) {
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -2510,8 +2412,8 @@ Buffer.prototype.readBigUInt64LE = defineBigIntMethod(function readBigUInt64LE(o
     const first = this[offset];
     const last = this[offset + 7];
     if (first === undefined || last === undefined) boundsError(offset, this.length - 8);
-    const lo = first + this[++offset] * 256 + this[++offset] * 65536 + this[++offset] * 2 ** 24;
-    const hi = this[++offset] + this[++offset] * 256 + this[++offset] * 65536 + last * 2 ** 24;
+    const lo = first + this[++offset] * 256 + this[++offset] * 2 ** 16 + this[++offset] * 2 ** 24;
+    const hi = this[++offset] + this[++offset] * 256 + this[++offset] * 2 ** 16 + last * 2 ** 24;
     return BigInt(lo) + (BigInt(hi) << BigInt(32));
 });
 Buffer.prototype.readBigUInt64BE = defineBigIntMethod(function readBigUInt64BE(offset) {
@@ -2520,8 +2422,8 @@ Buffer.prototype.readBigUInt64BE = defineBigIntMethod(function readBigUInt64BE(o
     const first = this[offset];
     const last = this[offset + 7];
     if (first === undefined || last === undefined) boundsError(offset, this.length - 8);
-    const hi = first * 2 ** 24 + this[++offset] * 65536 + this[++offset] * 256 + this[++offset];
-    const lo = this[++offset] * 2 ** 24 + this[++offset] * 65536 + this[++offset] * 256 + last;
+    const hi = first * 2 ** 24 + this[++offset] * 2 ** 16 + this[++offset] * 256 + this[++offset];
+    const lo = this[++offset] * 2 ** 24 + this[++offset] * 2 ** 16 + this[++offset] * 256 + last;
     return (BigInt(hi) << BigInt(32)) + BigInt(lo);
 });
 Buffer.prototype.readIntLE = function readIntLE(offset, byteLength, noAssert) {
@@ -2582,9 +2484,9 @@ Buffer.prototype.readBigInt64LE = defineBigIntMethod(function readBigInt64LE(off
     const first = this[offset];
     const last = this[offset + 7];
     if (first === undefined || last === undefined) boundsError(offset, this.length - 8);
-    const val = this[offset + 4] + this[offset + 5] * 256 + this[offset + 6] * 65536 + (last << 24 // Overflow
+    const val = this[offset + 4] + this[offset + 5] * 256 + this[offset + 6] * 2 ** 16 + (last << 24 // Overflow
     );
-    return (BigInt(val) << BigInt(32)) + BigInt(first + this[++offset] * 256 + this[++offset] * 65536 + this[++offset] * 2 ** 24);
+    return (BigInt(val) << BigInt(32)) + BigInt(first + this[++offset] * 256 + this[++offset] * 2 ** 16 + this[++offset] * 2 ** 24);
 });
 Buffer.prototype.readBigInt64BE = defineBigIntMethod(function readBigInt64BE(offset) {
     offset = offset >>> 0;
@@ -2592,8 +2494,9 @@ Buffer.prototype.readBigInt64BE = defineBigIntMethod(function readBigInt64BE(off
     const first = this[offset];
     const last = this[offset + 7];
     if (first === undefined || last === undefined) boundsError(offset, this.length - 8);
-    const val = (first << 24) + this[++offset] * 65536 + this[++offset] * 256 + this[++offset];
-    return (BigInt(val) << BigInt(32)) + BigInt(this[++offset] * 2 ** 24 + this[++offset] * 65536 + this[++offset] * 256 + last);
+    const val = (first << 24) + // Overflow
+    this[++offset] * 2 ** 16 + this[++offset] * 256 + this[++offset];
+    return (BigInt(val) << BigInt(32)) + BigInt(this[++offset] * 2 ** 24 + this[++offset] * 2 ** 16 + this[++offset] * 256 + last);
 });
 Buffer.prototype.readFloatLE = function readFloatLE(offset, noAssert) {
     offset = offset >>> 0;
@@ -3309,6 +3212,104 @@ exports.write = function(buffer, value, offset, isLE, mLen, nBytes) {
     buffer[offset + i - d] |= s * 128;
 };
 
+},{}],"3u8Tl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _utilsJs = require("../utils.js");
+var _utilsJsDefault = parcelHelpers.interopDefault(_utilsJs);
+"use strict";
+/**
+ * Create an Error with the specified message, config, error code, request and response.
+ *
+ * @param {string} message The error message.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [config] The config.
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ *
+ * @returns {Error} The created error.
+ */ function AxiosError(message, code, config, request, response) {
+    Error.call(this);
+    if (Error.captureStackTrace) Error.captureStackTrace(this, this.constructor);
+    else this.stack = new Error().stack;
+    this.message = message;
+    this.name = "AxiosError";
+    code && (this.code = code);
+    config && (this.config = config);
+    request && (this.request = request);
+    response && (this.response = response);
+}
+(0, _utilsJsDefault.default).inherits(AxiosError, Error, {
+    toJSON: function toJSON() {
+        return {
+            // Standard
+            message: this.message,
+            name: this.name,
+            // Microsoft
+            description: this.description,
+            number: this.number,
+            // Mozilla
+            fileName: this.fileName,
+            lineNumber: this.lineNumber,
+            columnNumber: this.columnNumber,
+            stack: this.stack,
+            // Axios
+            config: this.config,
+            code: this.code,
+            status: this.response && this.response.status ? this.response.status : null
+        };
+    }
+});
+const prototype = AxiosError.prototype;
+const descriptors = {};
+[
+    "ERR_BAD_OPTION_VALUE",
+    "ERR_BAD_OPTION",
+    "ECONNABORTED",
+    "ETIMEDOUT",
+    "ERR_NETWORK",
+    "ERR_FR_TOO_MANY_REDIRECTS",
+    "ERR_DEPRECATED",
+    "ERR_BAD_RESPONSE",
+    "ERR_BAD_REQUEST",
+    "ERR_CANCELED",
+    "ERR_NOT_SUPPORT",
+    "ERR_INVALID_URL"
+].forEach((code)=>{
+    descriptors[code] = {
+        value: code
+    };
+});
+Object.defineProperties(AxiosError, descriptors);
+Object.defineProperty(prototype, "isAxiosError", {
+    value: true
+});
+// eslint-disable-next-line func-names
+AxiosError.from = (error, code, config, request, response, customProps)=>{
+    const axiosError = Object.create(prototype);
+    (0, _utilsJsDefault.default).toFlatObject(error, axiosError, function filter(obj) {
+        return obj !== Error.prototype;
+    }, (prop)=>{
+        return prop !== "isAxiosError";
+    });
+    AxiosError.call(axiosError, error.message, code, config, request, response);
+    axiosError.cause = error;
+    axiosError.name = error.name;
+    customProps && Object.assign(axiosError, customProps);
+    return axiosError;
+};
+exports.default = AxiosError;
+
+},{"../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lSnyf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _formData = require("form-data");
+var _formDataDefault = parcelHelpers.interopDefault(_formData);
+exports.default = (0, _formDataDefault.default);
+
+},{"form-data":"2TZrR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2TZrR":[function(require,module,exports) {
+/* eslint-env browser */ module.exports = typeof self == "object" ? self.FormData : window.FormData;
+
 },{}],"1VRIM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -3460,8 +3461,8 @@ var _formDataToJSONJs = require("../helpers/formDataToJSON.js");
 var _formDataToJSONJsDefault = parcelHelpers.interopDefault(_formDataToJSONJs);
 var _indexJs1 = require("../adapters/index.js");
 var _indexJsDefault1 = parcelHelpers.interopDefault(_indexJs1);
-"use strict";
 var process = require("process");
+"use strict";
 const DEFAULT_CONTENT_TYPE = {
     "Content-Type": "application/x-www-form-urlencoded"
 };
@@ -3590,7 +3591,152 @@ const defaults = {
 });
 exports.default = defaults;
 
-},{"../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","./transitional.js":"lM32f","../helpers/toFormData.js":"ajoez","../helpers/toURLEncodedForm.js":"9hjry","../platform/index.js":"7tDev","../helpers/formDataToJSON.js":"01RfH","../adapters/index.js":"aeXzy","process":"d5jf4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lM32f":[function(require,module,exports) {
+},{"process":"d5jf4","../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","./transitional.js":"lM32f","../helpers/toFormData.js":"ajoez","../helpers/toURLEncodedForm.js":"9hjry","../platform/index.js":"7tDev","../helpers/formDataToJSON.js":"01RfH","../adapters/index.js":"aeXzy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d5jf4":[function(require,module,exports) {
+// shim for using process in browser
+var process = module.exports = {};
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+var cachedSetTimeout;
+var cachedClearTimeout;
+function defaultSetTimout() {
+    throw new Error("setTimeout has not been defined");
+}
+function defaultClearTimeout() {
+    throw new Error("clearTimeout has not been defined");
+}
+(function() {
+    try {
+        if (typeof setTimeout === "function") cachedSetTimeout = setTimeout;
+        else cachedSetTimeout = defaultSetTimout;
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === "function") cachedClearTimeout = clearTimeout;
+        else cachedClearTimeout = defaultClearTimeout;
+    } catch (e1) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+})();
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) //normal enviroments in sane situations
+    return setTimeout(fun, 0);
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch (e1) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch (e) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) //normal enviroments in sane situations
+    return clearTimeout(marker);
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e1) {
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e) {
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) return;
+    draining = false;
+    if (currentQueue.length) queue = currentQueue.concat(queue);
+    else queueIndex = -1;
+    if (queue.length) drainQueue();
+}
+function drainQueue() {
+    if (draining) return;
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+    var len = queue.length;
+    while(len){
+        currentQueue = queue;
+        queue = [];
+        while(++queueIndex < len)if (currentQueue) currentQueue[queueIndex].run();
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+process.nextTick = function(fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) for(var i = 1; i < arguments.length; i++)args[i - 1] = arguments[i];
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) runTimeout(drainQueue);
+};
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function() {
+    this.fun.apply(null, this.array);
+};
+process.title = "browser";
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ""; // empty string to avoid regexp issues
+process.versions = {};
+function noop() {}
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+process.listeners = function(name) {
+    return [];
+};
+process.binding = function(name) {
+    throw new Error("process.binding is not supported");
+};
+process.cwd = function() {
+    return "/";
+};
+process.chdir = function(dir) {
+    throw new Error("process.chdir is not supported");
+};
+process.umask = function() {
+    return 0;
+};
+
+},{}],"lM32f":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -4432,152 +4578,7 @@ parcelHelpers.defineInteropFlag(exports);
 }
 exports.default = speedometer;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d5jf4":[function(require,module,exports) {
-// shim for using process in browser
-var process = module.exports = {};
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-var cachedSetTimeout;
-var cachedClearTimeout;
-function defaultSetTimout() {
-    throw new Error("setTimeout has not been defined");
-}
-function defaultClearTimeout() {
-    throw new Error("clearTimeout has not been defined");
-}
-(function() {
-    try {
-        if (typeof setTimeout === "function") cachedSetTimeout = setTimeout;
-        else cachedSetTimeout = defaultSetTimout;
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === "function") cachedClearTimeout = clearTimeout;
-        else cachedClearTimeout = defaultClearTimeout;
-    } catch (e1) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-})();
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) //normal enviroments in sane situations
-    return setTimeout(fun, 0);
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch (e) {
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch (e1) {
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) //normal enviroments in sane situations
-    return clearTimeout(marker);
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e) {
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e1) {
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) return;
-    draining = false;
-    if (currentQueue.length) queue = currentQueue.concat(queue);
-    else queueIndex = -1;
-    if (queue.length) drainQueue();
-}
-function drainQueue() {
-    if (draining) return;
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-    var len = queue.length;
-    while(len){
-        currentQueue = queue;
-        queue = [];
-        while(++queueIndex < len)if (currentQueue) currentQueue[queueIndex].run();
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-process.nextTick = function(fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) for(var i = 1; i < arguments.length; i++)args[i - 1] = arguments[i];
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) runTimeout(drainQueue);
-};
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function() {
-    this.fun.apply(null, this.array);
-};
-process.title = "browser";
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ""; // empty string to avoid regexp issues
-process.versions = {};
-function noop() {}
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-process.listeners = function(name) {
-    return [];
-};
-process.binding = function(name) {
-    throw new Error("process.binding is not supported");
-};
-process.cwd = function() {
-    return "/";
-};
-process.chdir = function(dir) {
-    throw new Error("process.chdir is not supported");
-};
-process.umask = function() {
-    return 0;
-};
-
-},{}],"a0VmF":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a0VmF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -4848,6 +4849,6 @@ function isAxiosError(payload) {
 }
 exports.default = isAxiosError;
 
-},{"./../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequirea5f9")
+},{"./../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequire621c")
 
 //# sourceMappingURL=index.87216bf3.js.map
