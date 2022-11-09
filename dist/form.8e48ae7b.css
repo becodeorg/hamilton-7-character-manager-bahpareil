@@ -1,0 +1,16 @@
+#display-image {
+  width: 225px;
+  height: 225px;
+  background-position: center;
+  background-size: cover;
+  border: 0 solid #000;
+  border-radius: 50%;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/*# sourceMappingURL=form.8e48ae7b.css.map */

@@ -6,3 +6,6 @@
     background-size: cover;
     border-radius: 50%;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
