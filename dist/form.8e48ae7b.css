@@ -13,4 +13,8 @@
 
 @tailwind utilities;
 
+a:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=form.8e48ae7b.css.map */
