@@ -1,6 +1,6 @@
 5543
 87/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/js/form-script.js1667992108482517300 0
-82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/js/script.js1668004978945098372 0
+82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/js/script.js1668005411969558218 0
 72/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/js1667992108482517300 1
 84/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/css/styles.css1668002159630909435 0
 73/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/ressource/css1668002159630909435 1
@@ -483,7 +483,7 @@
 110/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/svgo/plugins/moveGroupAttrsToElems.js1668000988164906590 0
 104/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/fast-glob/out/readers/sync.d.ts1668001034868927705 0
 94/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/fast-glob/out/readers1668001034868927705 1
-87/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.8e48ae7b.css.map1668005020500721818 0
+87/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.8e48ae7b.css.map1668005412701551069 0
 117/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/tailwindcss/lib/lib/partitionApplyAtRules.js1668001034940927735 0
 86/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/fast-glob/out1668001034864927704 1
 89/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/follow-redirects1668000987800906410 1
@@ -2047,7 +2047,7 @@
 92/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/fill-range/index.js1668001034676927627 0
 99/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/source-map/source-map.d.ts1668000988016906517 0
 106/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/aac.js1668000987744906382 0
-75/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.html1668005020480721997 0
+75/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.html1668005412789550209 0
 101/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/type-fest/source/except.d.ts1668000987936906478 0
 101/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/nth-check/lib/compile.js.map1668000987888906454 0
 100/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/tailwindcss/src/css/LICENSE1668001034740927653 0
@@ -2080,13 +2080,13 @@
 122/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/tailwindcss/src/postcss-plugins/nesting/README.md1668001034956927742 0
 122/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-read-only-write.js1668000988488906750 0
 131/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/lightningcss-linux-x64-gnu/lightningcss.linux-x64-gnu.node1668000988476906744 0
-82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.87216bf3.js1668005020480721997 0
+82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.87216bf3.js1668005412765550444 0
 112/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/dom-range.js1668000988544906778 0
 100/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/yaml/browser/types/pairs.js1668000988024906521 0
 85/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/entities/lib1668000988076906547 1
 122/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-overflow-anchor.js1668000988476906744 0
 104/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@jridgewell/gen-mapping/LICENSE1668000987584906303 0
-81/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.dc61df93.js1668005020480721997 0
+81/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.dc61df93.js1668005412761550483 0
 108/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/regions/alt-ww.js1668000988084906550 0
 104/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/regions/PT.js1668000988628906819 0
 94/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/htmlparser2/README.md1668000987936906478 0
@@ -2136,7 +2136,7 @@
 103/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/type-fest/source/asyncify.d.ts1668000987784906402 0
 119/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-env-function.js1668000988432906722 0
 103/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/core/lib/buildCache.js1668000988188906602 0
-64/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist1668005020500721818 1
+64/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist1668005412789550209 1
 87/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/fastq/queue.js1668001034712927641 0
 148/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-main-directory1668000988488906750 1
 128/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-container-query-units.js1668000988408906711 0
@@ -2168,7 +2168,7 @@
 108/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/htmlnano/lib/modules/mergeStyles.js1668000987972906496 0
 120/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@babel/helper-validator-identifier/lib/index.js1668000987780906400 0
 118/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/arrow-functions.js1668000988124906570 0
-83/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.8e48ae7b.css1668005020480721997 0
+83/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.8e48ae7b.css1668005412685551225 0
 110/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/gamepad.js1668000988564906788 0
 101/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/abortcontroller-polyfill/src1668000987972906496 1
 108/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/utility-types/dist/utility-types.js1668000987768906394 0
@@ -2272,7 +2272,7 @@
 117/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-page-break.js1668000988476906744 0
 94/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/get-port/package.json1668000987624906323 0
 109/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/css-tree/lib/lexer/generic-urange.js1668000988304906659 0
-85/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.5d0a5e81.js.map1668005020500721818 0
+85/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.5d0a5e81.js.map1668005412769550405 0
 82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/type-fest1668000987964906491 1
 145/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.darwin-x64.node1668000988292906653 0
 115/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/css-tree/lib/syntax/node/MediaQueryList.js1668000988400906707 0
@@ -2345,7 +2345,7 @@
 114/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-filters.js1668000988436906724 0
 90/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/ieee754/README.md1668001248152981627 0
 99/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/axios/lib/platform/browser1668000988216906616 1
-74/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.html1668005020480721997 0
+74/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.html1668005412789550209 0
 104/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/regions/SE.js1668000988640906825 0
 102/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/type-fest/source/mutable.d.ts1668000988024906521 0
 94/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/mdn-data/package.json1668000988016906517 0
@@ -2517,7 +2517,7 @@
 116/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/border-radius.js1668000988260906637 0
 82/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/lilconfig1668001034700927637 1
 110/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/resolver-default/package.json1668002157994894921 0
-85/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.dc61df93.js.map1668005020500721818 0
+85/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.dc61df93.js.map1668005412769550405 0
 124/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/constraint-validation.js1668000988352906683 0
 103/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/workers/lib/backend.js1668000987676906349 0
 110/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@nodelib/fs.scandir/out/settings.d.ts1668001034808927681 0
@@ -3083,7 +3083,7 @@
 115/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/transforms2d.js1668000988664906837 0
 98/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/fs/lib/browser.js1668002157798893180 0
 104/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/regions/MR.js1668000988612906811 0
-81/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.5d0a5e81.js1668005020480721997 0
+81/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/form.5d0a5e81.js1668005412761550483 0
 118/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/resolve/test/resolver/incorrect_main/index.js1668001034888927714 0
 120/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/caniuse-lite/data/features/css-rebeccapurple.js1668000988488906750 0
 116/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/tailwindcss/src/util/flattenColorPalette.js1668001034892927715 0
@@ -4275,7 +4275,7 @@
 95/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/events/LICENSE1668000987624906323 0
 88/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/watcher1668000988372906693 1
 101/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/events/lib/errors.js1668000987796906408 0
-86/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.87216bf3.js.map1668005020500721818 0
+86/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/dist/index.87216bf3.js.map1668005412769550405 0
 105/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/@parcel/events/lib/Disposable.js1668000987680906351 0
 93/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/globals/package.json1668000987748906384 0
 103/home/nicolas/Becode/hamilton-7-character-manager-bahpareil/node_modules/cosmiconfig/dist/Explorer.d.ts1668000988088906553 0
