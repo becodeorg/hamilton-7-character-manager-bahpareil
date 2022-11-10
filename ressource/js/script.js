@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, * as others from 'axios';
 const wrapper = document.getElementById("card-wrapper");
 
 getChara();
@@ -19,7 +19,7 @@ async function getChara() {
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
         image.setAttribute("src", "data:image/gif;base64," + elem.image);//3ème étape
-        image.setAttribute("class", "my-5 rounded-full inline-block w-20");
+        image.setAttribute("class", "my-5 rounded-full inline w-full");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
         characterLink.setAttribute("href", "#");
