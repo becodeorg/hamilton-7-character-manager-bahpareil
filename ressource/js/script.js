@@ -1,4 +1,3 @@
-import { default as axios } from "../../node_modules/axios";
 const wrapper = document.getElementById("card-wrapper");
 
 getChara();
