@@ -538,7 +538,7 @@ async function getChara() {
     try {
         const response = await axios.get("https://character-database.becode.xyz/characters");
         console.log(response);
-        for (elem of response.data){
+        for (let elem of response.data){
             //Create element
             let card = document.createElement("div");
             let image = document.createElement("img"); //2ème étape
