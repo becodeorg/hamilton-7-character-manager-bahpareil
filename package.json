@@ -2,7 +2,6 @@
   "name": "hamilton-7-character-manager-bahpareil",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "source": "./index.html",
   "scripts": {
     "start": "parcel",
