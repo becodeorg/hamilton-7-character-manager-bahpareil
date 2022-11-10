@@ -17,4 +17,26 @@ a:hover {
   cursor: pointer;
 }
 
+.sendImage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#firstname, #short-description {
+  margin: 5px;
+}
+
+h1 {
+  text-align: left;
+  padding-left: 5%;
+}
+
+main {
+  background-color: gray;
+  border-radius: 1%;
+  margin: 5%;
+}
+
 /*# sourceMappingURL=form.8e48ae7b.css.map */

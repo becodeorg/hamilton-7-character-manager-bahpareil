@@ -13,3 +13,39 @@
 a:hover { 
     cursor: pointer;
 }
+
+.sendImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstname, #short-description{
+    margin: 5px;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 5%;
+}
+
+main {
+    margin: 5%;
+    background-color: grey;
+    border-radius: 1%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 1px solid black;
+    width: 15%;
+    border-radius: 5%;
+    height: 50px;
+}

@@ -8,3 +8,12 @@ image_input.addEventListener("change", function() {
 });
 reader.readAsDataURL(this.files[0]);
 });
+
+// let text=document.getElementById('firstname');
+// let logText = document.getElementById('display-firstname');
+
+// text.addEventListener('keyup', logKey)
+
+// function logKey(e) {
+//     logText.textContent += `${e.key}`;
+//   }
