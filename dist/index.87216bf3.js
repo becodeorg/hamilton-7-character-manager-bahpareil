@@ -532,11 +532,14 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"bqMLY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
 const wrapper = document.getElementById("card-wrapper");
 getChara();
 async function getChara() {
     try {
-        const response = await axios.get("https://character-database.becode.xyz/characters");
+        const response = await (0, _axiosDefault.default).get("https://character-database.becode.xyz/characters");
         console.log(response);
         for (let elem of response.data){
             //Create element

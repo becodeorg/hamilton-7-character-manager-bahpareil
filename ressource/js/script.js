@@ -1,3 +1,4 @@
+import axios from 'axios';
 const wrapper = document.getElementById("card-wrapper");
 
 getChara();
