@@ -1,13 +1,18 @@
-
+import axios, * as others from 'axios';
 const wrapper = document.getElementById("card-wrapper");
 
-getChara();
+axios({
+  method: "get",
+  url: "https://character-database.becode.xyz/characters",
+})
+  .then((res) =>  getChara(res.data))// res = response
+  .catch((err) => console.log(err));
 
-async function getChara() {
-    try {
-      const response = await axios.get("https://character-database.becode.xyz/characters");
+
+
+function getChara(response) {
       console.log(response);
-      for(let elem of response.data) {
+      for(let elem of response) {
         //Create element
         let card = document.createElement("div");
         let image = document.createElement("img"); //2ème étape
@@ -36,8 +41,6 @@ async function getChara() {
         card.appendChild(characterLink);
         wrapper.appendChild(card);
       }
-
-    } catch (error) {
-      console.error(error);
-    }
   }
+
+  getChara();
