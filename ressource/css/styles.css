@@ -8,6 +8,7 @@
 }
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
 
 a:hover { 
@@ -49,3 +50,6 @@ button {
     border-radius: 5%;
     height: 50px;
 }
+=======
+@tailwind utilities;
+>>>>>>> master
