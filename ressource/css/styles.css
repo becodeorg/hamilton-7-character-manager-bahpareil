@@ -1,4 +1,4 @@
-#display-image{
+/* #display-image{
     width: 225px;
     height: 225px;
     border: 0px solid black;
@@ -49,4 +49,4 @@ button {
     border-radius: 5%;
     height: 50px;
 }
-@tailwind utilities;
+@tailwind utilities; */
