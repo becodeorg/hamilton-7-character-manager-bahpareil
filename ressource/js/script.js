@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import axios from "../../node_modules/axios/dist/axios.js";
-import axios, * as others from 'axios';
-=======
-import axios from "axios";
->>>>>>> master
+const { default: axios } = require("axios");
 const wrapper = document.getElementById("card-wrapper");
 
 getChara();
@@ -12,7 +7,7 @@ async function getChara() {
     try {
       const response = await axios.get("https://character-database.becode.xyz/characters");
       console.log(response);
-      for(let elem of response.data) {
+      for(elem of response.data) {
         //Create element
         let card = document.createElement("div");
         let image = document.createElement("img"); //2ème étape
@@ -24,7 +19,7 @@ async function getChara() {
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
         image.setAttribute("src", "data:image/gif;base64," + elem.image);//3ème étape
-        image.setAttribute("class", "my-5 rounded-full mx-auto my-0 w-full");
+        image.setAttribute("class", "my-5 rounded-full inline-block w-20");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
         characterLink.setAttribute("href", "#");

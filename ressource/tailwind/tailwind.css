@@ -638,7 +638,7 @@ video {
 }
 
 ///Lauranne's part
-#display-image{
+#displayImage{
   width: 225px;
   height: 225px;
   border: 0px solid black;
@@ -646,9 +646,6 @@ video {
   background-size: cover;
   border-radius: 50%;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 a:hover { 
   cursor: pointer;
@@ -689,4 +686,3 @@ button {
   border-radius: 5%;
   height: 50px;
 }
-@tailwind utilities;
