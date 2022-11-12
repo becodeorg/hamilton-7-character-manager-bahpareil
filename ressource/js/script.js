@@ -24,7 +24,7 @@ async function getChara() {
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
         image.setAttribute("src", "data:image/gif;base64," + elem.image);//3ème étape
-        image.setAttribute("class", "my-5 rounded-full inline w-full");
+        image.setAttribute("class", "my-5 rounded-full mx-auto my-0 w-full");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
         characterLink.setAttribute("href", "#");
