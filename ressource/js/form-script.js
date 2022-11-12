@@ -3,7 +3,7 @@ image_input.addEventListener("change", function() {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
     const uploaded_image = reader.result;
-    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    document.querySelector("#displayImage").style.backgroundImage = `url(${uploaded_image})`;
 //    image_input.style.display = "none<";
 });
 reader.readAsDataURL(this.files[0]);
