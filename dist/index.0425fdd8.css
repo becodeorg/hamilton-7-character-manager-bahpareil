@@ -349,4 +349,53 @@ img, video {
   }
 }
 
+#displayImage {
+  width: 225px;
+  height: 225px;
+  background-position: center;
+  background-size: cover;
+  border: 0 solid #000;
+  border-radius: 50%;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.sendImage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#firstname, #short-description {
+  margin: 5px;
+}
+
+h1 {
+  text-align: left;
+  padding-left: 5%;
+}
+
+main {
+  background-color: gray;
+  border-radius: 1%;
+  margin: 5%;
+}
+
+.buttons {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button {
+  width: 15%;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 5%;
+}
+
 /*# sourceMappingURL=index.0425fdd8.css.map */
