@@ -42,3 +42,9 @@ async function getChara() {
   }
 
   getChara();
+
+  var btn = document.querySelector("div");
+  
+  btn.addEventListener("click", ()=>{
+    window.location.replace("./character.html");
+  })

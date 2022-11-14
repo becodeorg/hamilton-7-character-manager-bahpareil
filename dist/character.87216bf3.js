@@ -3770,4 +3770,4 @@ exports.export = function(dest, destName, get) {
 
 },{}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequire621c")
 
-//# sourceMappingURL=index.87216bf3.js.map
+//# sourceMappingURL=character.87216bf3.js.map
