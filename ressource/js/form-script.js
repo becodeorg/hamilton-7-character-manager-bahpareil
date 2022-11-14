@@ -1,19 +1,19 @@
-const image_input = document.querySelector("#image-input");
+import axios from "axios";
+
+const image_input = document.getElementById("image-input");
+let display_image = document.getElementById("displayImage");
+let image = document.createElement("img");
+
 image_input.addEventListener("change", function() {
     const reader = new FileReader();
+    reader.readAsDataURL(this.files[0]);
+    
     reader.addEventListener("load", () => {
-    const uploaded_image = reader.result;
-    document.querySelector("#displayImage").style.backgroundImage = `url(${uploaded_image})`;
-//    image_input.style.display = "none<";
+        const uploaded_image = reader.result;
+        image.setAttribute("src", `${uploaded_image}`);
+        image.setAttribute("class", "mx-auto rounded-full w-28 h-28");
+        display_image.appendChild(image);
+        
+    });
+    
 });
-reader.readAsDataURL(this.files[0]);
-});
-
-// let text=document.getElementById('firstname');
-// let logText = document.getElementById('display-firstname');
-
-// text.addEventListener('keyup', logKey)
-
-// function logKey(e) {
-//     logText.textContent += `${e.key}`;
-//   }

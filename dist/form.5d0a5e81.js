@@ -1,17 +1,16 @@
-const image_input = document.querySelector("#image-input");
+const image_input = document.getElementById("image-input");
+let display_image = document.getElementById("displayImage");
+let image = document.createElement("img");
 image_input.addEventListener("change", function() {
     const reader = new FileReader();
     reader.addEventListener("load", ()=>{
         const uploaded_image = reader.result;
-        document.querySelector("#displayImage").style.backgroundImage = `url(${uploaded_image})`;
-    //    image_input.style.display = "none<";
+        image.setAttribute("src", `url(${uploaded_image})`);
+        image.setAttribute("class", "w-20 bg-cover rounded-full");
+        //display_image.style.backgroundImage = `url(${uploaded_image})`;
+        display_image.appendChild(image);
     });
     reader.readAsDataURL(this.files[0]);
-}); // let text=document.getElementById('firstname');
- // let logText = document.getElementById('display-firstname');
- // text.addEventListener('keyup', logKey)
- // function logKey(e) {
- //     logText.textContent += `${e.key}`;
- //   }
+});
 
 //# sourceMappingURL=form.5d0a5e81.js.map

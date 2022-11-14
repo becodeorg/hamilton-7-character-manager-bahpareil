@@ -20,11 +20,12 @@ async function getChara() {
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
         image.setAttribute("src", "data:image/gif;base64," + data.image);//3ème étape
-        image.setAttribute("class", "my-5 rounded-full mx-auto w-20");
+        image.setAttribute("class", "-y-5 rounded-full mx-auto w-20");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
         characterLink.setAttribute("href", "#");
         buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
+        buttonCharacter.setAttribute("id", `${data.id}`);
         name.textContent = data.name;
         littledesc.textContent = data.shortDescription;
         //idInformation.textContent = data.id;

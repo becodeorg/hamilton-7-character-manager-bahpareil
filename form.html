@@ -10,60 +10,37 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0-beta.0/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0-beta.0/dist/trix.umd.min.js"></script>
 </head>
-<body class="text-center bg-gradient-to-r from-sky-500 to-indigo-500">
+<body class="text-center bg-gradient-to-r from-sky-500 to-indigo-500 font-sans">
     <header>
         <a href="./index.html"><h1 class="text-4xl my-10 font-bold">Character Manager</h1></a>
     </header>
     
-    <main>
-        <section class="sendImage">
-            <div id="displayImage" style="             width: 225px;
-                height: 225px;
-                border: 0px solid black;
-                background-position: center;
-                background-size: cover;
-                border-radius: 50%;
-            "></div>
-            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
-        </section>
-
-        <section>
-            <span id="display-firstname"></span>
-        </section>
-        
-        <section>
-            <input type="text" name="firstname" id="firstname" placeholder="Enter the character's name here"/>
-        </section>
-    
-        <section>
-            <input type="text" name="short-description" id="short-description" placeholder="Enter a short description"/>
-        </section>
-
+    <main class="bg-slate-500 rounded-2xl mx-6 pt-5 px-2 md:px-16 lg:mx-auto w-1/2 lg:px-32">
         <form>
+            <div id="displayImage"></div>
+
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg" class="block mx-auto my-5 w-1/4">
+
+            <span id="display-firstname"></span>
+        
+            <label for="firstname">Enter the name of your character: </label>
+            <input type="text" name="firstname" id="firstname" placeholder="John Doe" class="bg-slate-300 rounded mb-5 block mx-auto"/>
+
+            <label for="short-description">Enter a short description: </label>
+            <input type="text" name="short-description" id="short-description" placeholder="He like coding,..." class="bg-slate-300 rounded mb-5 block mx-auto"/>
+
+            <label for="x">Enter his detailed description:</label>
             <input id="x" type="hidden" name="content">
-            <trix-editor input="x" placeholder="Enter your character's story here"></trix-editor>
+            <trix-editor input="x" placeholder="I like parcel,..." class="bg-slate-300 mb-5"></trix-editor>
         </form>
-        <!-- <section>
-            <button><i class="fa-solid fa-b"></i></button>
-            <button><i class="fa-solid fa-italic"></i></button>
-            <button><i class="fa-solid fa-strikethrough"></i></button>
-            <button><i class="fa-solid fa-list-ul"></i></button>
-            <button><i class="fa-solid fa-list-ol"></i></button>
-            <button><i class="fa-solid fa-quote-left"></i></button>
-            <button><i class="fa-solid fa-align-left"></i></button>
-            <button><i class="fa-solid fa-align-center"></i></button>
-            <button><i class="fa-solid fa-align-right"></i></button>
-        </br><input type="text" name="long-description" id="long-description" placeholder="Enter the character's story"/>
-        </section> -->
         <section class="buttons">
-            <button class="rounded-full bg-slate-500 mb-10 py-3 px-6 font-bold">Save changes</button>
-            <button class="rounded-full bg-slate-500 mb-10 py-3 px-6 font-bold">Delete character</button>
+            <button class="rounded-full bg-slate-300 mb-5 mx-auto py-3 px-6 font-bold block">Save changes</button>
+            <button class="rounded-full bg-red-400 mb-10 py-3 px-6 font-bold">Delete character</button>
         </section>
     </main>
 
     <footer>
-        <script src="./ressource/js/form-script.js"></script>
-        <script type="module" src="./ressource/js/script.js"></script>
+        <script type="module" src="./ressource/js/form-script.js"></script>
     </footer>
 </body>
 </html>
