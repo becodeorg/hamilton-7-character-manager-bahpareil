@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Panel</title>
-    <script src="https://kit.fontawesome.com/d74732e987.js" crossorigin="anonymous"></script>
+    <script src="/character.0733120b.js"></script><script src="https://kit.fontawesome.com/d74732e987.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/character.0425fdd8.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0-beta.0/dist/trix.css">
 </head>
 <body class="text-center bg-gradient-to-r from-sky-500 to-indigo-500">
     <header>
-        <a href="/index.html"><h1 class="text-4xl my-10 font-bold">Character Panel</h1></a>
+        <a href="/index.html"><h1 class="text-4xl my-10 font-bold">Character Manager</h1></a>
     </header>
     
-    <main>
+    <main class="bg-slate-500 rounded-2xl mx-6 pt-5 px-2 md:px-16 lg:mx-auto w-1/2 lg:px-32">
+        <form>
+            <div id="displayImage"></div>
+            <h2 class="text-2xl font-bold">Name</h2>
+            <h2>Short description</h2>
+            <p class="my-5">Long description</p>
+        </form>
+        <section class="buttons">
+            <button class="rounded-full bg-slate-300 mb-5 mx-auto py-3 px-6 font-bold block">Update character</button>
+            <button class="rounded-full bg-red-400 mb-10 py-3 px-6 font-bold">Delete character</button>
+        </section>
     </main>
 
     <footer>
-        <script src="/character.d98da830.js"></script>
-        <script src="/character.5d0a5e81.js"></script>
         <script src="/character.87216bf3.js" defer=""></script>
     </footer>
 </body>
