@@ -1,14 +1,13 @@
 import axios from "axios";
 const wrapper = document.getElementById("card-wrapper");
 
-getChara();
-
 async function getChara() {
     try {
       const response = await axios.get("https://character-database.becode.xyz/characters");
       console.log(response);
-      for(elem of response.data) {
+      for(let i = 0; i < response.data.length; i++) {
         //Create element
+        let data = response.data[i];
         let card = document.createElement("div");
         let image = document.createElement("img"); //2ème étape
         let name = document.createElement("h2");
@@ -18,14 +17,14 @@ async function getChara() {
 
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
-        image.setAttribute("src", "data:image/gif;base64," + elem.image);//3ème étape
-        image.setAttribute("class", "my-5 rounded-full inline-block w-20");
+        image.setAttribute("src", "data:image/gif;base64," + data.image);//3ème étape
+        image.setAttribute("class", "my-5 rounded-full mx-auto w-20");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
         characterLink.setAttribute("href", "#");
         buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
-        name.textContent = elem.name;
-        littledesc.textContent = elem.shortDescription;
+        name.textContent = data.name;
+        littledesc.textContent = data.shortDescription;
         buttonCharacter.textContent = "View the Character Panel";
 
         //Append child
@@ -41,3 +40,5 @@ async function getChara() {
       console.error(error);
     }
   }
+
+  getChara();
