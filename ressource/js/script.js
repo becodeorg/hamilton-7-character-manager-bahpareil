@@ -14,6 +14,8 @@ async function getChara() {
         let littledesc = document.createElement("p");
         let buttonCharacter = document.createElement("p");
         let characterLink = document.createElement("a");
+        let idInformation = data.id;
+        console.log(idInformation);
 
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl");
@@ -25,12 +27,14 @@ async function getChara() {
         buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
         name.textContent = data.name;
         littledesc.textContent = data.shortDescription;
+        //idInformation.textContent = data.id;
         buttonCharacter.textContent = "View the Character Panel";
 
         //Append child
         card.appendChild(image);//4éme étape (document.body.appendChild(image))
         card.appendChild(name);
         card.appendChild(littledesc);
+        //card.appendChild(idInformation);
         characterLink.appendChild(buttonCharacter)
         card.appendChild(characterLink);
         wrapper.appendChild(card);
