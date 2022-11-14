@@ -557,6 +557,7 @@ async function getChara() {
             littledesc.setAttribute("class", "my-5");
             characterLink.setAttribute("href", "#");
             buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
+            buttonCharacter.setAttribute("id", `${data.id}`);
             name.textContent = data.name;
             littledesc.textContent = data.shortDescription;
             buttonCharacter.textContent = "View the Character Panel";
