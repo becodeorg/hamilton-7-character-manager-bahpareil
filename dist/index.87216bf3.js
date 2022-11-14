@@ -550,7 +550,7 @@ async function getChara() {
             let buttonCharacter = document.createElement("p");
             let characterLink = document.createElement("a");
             //Set attribute and content
-            card.setAttribute("class", "card bg-slate-500 rounded-2xl");
+            card.setAttribute("class", "card bg-slate-500 rounded-2xl pt-5");
             image.setAttribute("src", "data:image/gif;base64," + data.image); //3ème étape
             image.setAttribute("class", "-y-5 rounded-full mx-auto w-20");
             name.setAttribute("class", "text-2xl font-bold");
