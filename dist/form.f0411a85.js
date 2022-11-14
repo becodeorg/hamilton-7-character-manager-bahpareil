@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"9MAGT":[function(require,module,exports) {
+})({"klnol":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "1a78327f87216bf3";
+module.bundle.HMR_BUNDLE_ID = "6ae710a3f0411a85";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -531,49 +531,24 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"bqMLY":[function(require,module,exports) {
+},{}],"9qzfY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const wrapper = document.getElementById("card-wrapper");
-async function getChara() {
-    try {
-        const response = await (0, _axiosDefault.default).get("https://character-database.becode.xyz/characters");
-        console.log(response);
-        for(let i = 0; i < response.data.length; i++){
-            //Create element
-            let data = response.data[i];
-            let card = document.createElement("div");
-            let image = document.createElement("img"); //2ème étape
-            let name = document.createElement("h2");
-            let littledesc = document.createElement("p");
-            let buttonCharacter = document.createElement("p");
-            let characterLink = document.createElement("a");
-            //Set attribute and content
-            card.setAttribute("class", "card bg-slate-500 rounded-2xl");
-            image.setAttribute("src", "data:image/gif;base64," + data.image); //3ème étape
-            image.setAttribute("class", "-y-5 rounded-full mx-auto w-20");
-            name.setAttribute("class", "text-2xl font-bold");
-            littledesc.setAttribute("class", "my-5");
-            characterLink.setAttribute("href", "#");
-            buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
-            name.textContent = data.name;
-            littledesc.textContent = data.shortDescription;
-            buttonCharacter.textContent = "View the Character Panel";
-            //Append child
-            card.appendChild(image); //4éme étape (document.body.appendChild(image))
-            card.appendChild(name);
-            card.appendChild(littledesc);
-            characterLink.appendChild(buttonCharacter);
-            card.appendChild(characterLink);
-            wrapper.appendChild(card);
-        }
-    } catch (error) {
-        console.error(error);
-    }
-}
-getChara();
+const image_input = document.getElementById("image-input");
+let display_image = document.getElementById("displayImage");
+let image = document.createElement("img");
+image_input.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.readAsDataURL(this.files[0]);
+    reader.addEventListener("load", ()=>{
+        const uploaded_image = reader.result;
+        image.setAttribute("src", `${uploaded_image}`);
+        image.setAttribute("class", "mx-auto rounded-full w-28 h-28");
+        display_image.appendChild(image);
+    });
+});
 
-},{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequire621c")
+},{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["klnol","9qzfY"], "9qzfY", "parcelRequire621c")
 
-//# sourceMappingURL=index.87216bf3.js.map
+//# sourceMappingURL=form.f0411a85.js.map
