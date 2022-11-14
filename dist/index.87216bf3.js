@@ -573,6 +573,10 @@ async function getChara() {
     }
 }
 getChara();
+var btn = document.querySelector("div");
+btn.addEventListener("click", ()=>{
+    window.location.replace("./character.html");
+});
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequire621c")
 
