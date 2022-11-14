@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Manager</title>
     <script src="https://kit.fontawesome.com/d74732e987.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./ressource/tailwind/tailwind.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0-beta.0/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.0-beta.0/dist/trix.umd.min.js"></script>
 </head>
-<body>
+<body class="text-center bg-gradient-to-r from-sky-500 to-indigo-500">
     <header>
-        <h1>Character Manager</h1>
+        <a href="./index.html"><h1 class="text-4xl my-10 font-bold">Character Manager</h1></a>
     </header>
     
     <main>
+        <section class="sendImage">
+            <div id="displayImage" style="             width: 225px;
+                height: 225px;
+                border: 0px solid black;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+            "></div>
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        </section>
+
         <section>
-            <input type="file" accept="image/*" />
+            <span id="display-firstname"></span>
         </section>
         
         <section>
@@ -43,14 +55,15 @@
             <button><i class="fa-solid fa-align-right"></i></button>
         </br><input type="text" name="long-description" id="long-description" placeholder="Enter the character's story"/>
         </section> -->
-        <section>
-            <button>Save changes</button>
-            <button>Delete character</button>
+        <section class="buttons">
+            <button class="rounded-full bg-slate-500 mb-10 py-3 px-6 font-bold">Save changes</button>
+            <button class="rounded-full bg-slate-500 mb-10 py-3 px-6 font-bold">Delete character</button>
         </section>
     </main>
 
     <footer>
         <script src="./ressource/js/form-script.js"></script>
+        <script src="./ressource/js/script.js"></script>
     </footer>
 </body>
 </html>
