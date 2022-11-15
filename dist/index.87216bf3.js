@@ -549,17 +549,16 @@ async function getChara() {
             let littledesc = document.createElement("p");
             let buttonCharacter = document.createElement("p");
             let characterLink = document.createElement("a");
-            let idInformation = data.id;
-            console.log(idInformation);
+            //let idInformation = data.id;
+            //console.log(idInformation);
             //Set attribute and content
             card.setAttribute("class", "card bg-slate-500 rounded-2xl pt-5");
             image.setAttribute("src", "data:image/gif;base64," + data.image); //3ème étape
             image.setAttribute("class", "-y-5 rounded-full mx-auto w-20");
             name.setAttribute("class", "text-2xl font-bold");
             littledesc.setAttribute("class", "my-5");
-            characterLink.setAttribute("href", "#");
-            buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
-            buttonCharacter.setAttribute("id", `${data.id}`);
+            buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block button");
+            characterLink.setAttribute("class", "button");
             name.textContent = data.name;
             littledesc.textContent = data.shortDescription;
             //idInformation.textContent = data.id;
@@ -572,16 +571,15 @@ async function getChara() {
             characterLink.appendChild(buttonCharacter);
             card.appendChild(characterLink);
             wrapper.appendChild(card);
+            characterLink.addEventListener("click", ()=>{
+                window.location.href = `character.html?id=${data.id}`;
+            });
         }
     } catch (error) {
         console.error(error);
     }
 }
-getChara();
-var btn = document.querySelector("div");
-btn.addEventListener("click", ()=>{
-    window.location.replace("./character.html");
-});
+getChara(); //var btn = document.querySelector("div");
 
 },{"axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9MAGT","bqMLY"], "bqMLY", "parcelRequire621c")
 

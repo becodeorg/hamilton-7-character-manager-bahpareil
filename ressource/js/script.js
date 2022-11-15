@@ -1,6 +1,5 @@
 import axios from "axios";
 const wrapper = document.getElementById("card-wrapper");
-
 async function getChara() {
     try {
       const response = await axios.get("https://character-database.becode.xyz/characters");
@@ -14,8 +13,8 @@ async function getChara() {
         let littledesc = document.createElement("p");
         let buttonCharacter = document.createElement("p");
         let characterLink = document.createElement("a");
-        let idInformation = data.id;
-        console.log(idInformation);
+        //let idInformation = data.id;
+        //console.log(idInformation);
 
         //Set attribute and content
         card.setAttribute("class", "card bg-slate-500 rounded-2xl pt-5");
@@ -23,9 +22,8 @@ async function getChara() {
         image.setAttribute("class", "-y-5 rounded-full mx-auto w-20");
         name.setAttribute("class", "text-2xl font-bold")
         littledesc.setAttribute("class", "my-5");
-        characterLink.setAttribute("href", "#");
-        buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block");
-        buttonCharacter.setAttribute("id", `${data.id}`);
+        buttonCharacter.setAttribute("class", "rounded-full bg-cyan-600 mb-5 py-3 px-3 inline-block button");
+        characterLink.setAttribute("class", "button");
         name.textContent = data.name;
         littledesc.textContent = data.shortDescription;
         //idInformation.textContent = data.id;
@@ -39,6 +37,10 @@ async function getChara() {
         characterLink.appendChild(buttonCharacter)
         card.appendChild(characterLink);
         wrapper.appendChild(card);
+
+        characterLink.addEventListener('click', () => {
+          window.location.href = `character.html?id=${data.id}`;
+        });
       }
 
     } catch (error) {
@@ -46,10 +48,6 @@ async function getChara() {
     }
   }
 
-  getChara();
+getChara();
 
-  var btn = document.querySelector("div");
-  
-  btn.addEventListener("click", ()=>{
-    window.location.replace("./character.html");
-  })
+//var btn = document.querySelector("div");
